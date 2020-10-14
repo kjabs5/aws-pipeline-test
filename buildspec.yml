@@ -4,11 +4,11 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - mvn clean package
+      - mvn package
   post_build:
     commands:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/aws-pipeline-test.war
+    - target/aws-pipeline-test.jar
   discard-paths: yes
