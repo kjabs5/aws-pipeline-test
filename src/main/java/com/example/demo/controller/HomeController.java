@@ -19,5 +19,10 @@ public class HomeController {
 	public List<Product> prodList(){
 		return productservice.getList();
 	}
+	
+	@GetMapping("/home")
+	public String home(){
+		return "Welcome kishor";
+	}
 
 }
